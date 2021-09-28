@@ -12,6 +12,8 @@ target 'volumeBooster' do
     :hermes_enabled => false
   )
 
+  pod 'RNVolumeController', :path => '../node_modules/react-native-volume-control'
+
   target 'volumeBoosterTests' do
     inherit! :complete
     # Pods for testing

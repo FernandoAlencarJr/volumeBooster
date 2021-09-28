@@ -12,7 +12,7 @@ const Section: React.FC<{
         style={[
           styles.sectionTitle,
           {
-            color: isDarkMode ? Colors.white : Colors.black,
+            color: isDarkMode ? Colors.white : '#171717',
           },
         ]}>
         {title}
@@ -21,7 +21,7 @@ const Section: React.FC<{
         style={[
           styles.sectionDescription,
           {
-            color: isDarkMode ? Colors.light : Colors.dark,
+            color: isDarkMode ? Colors.light : '#171717',
           },
         ]}>
         {children}
@@ -45,8 +45,5 @@ const styles = StyleSheet.create({
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
   },
 });
